@@ -8,7 +8,7 @@ import sys
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 #load model
-model = keras.models.load_model("complete_saved_model_big/epoch_750")
+model = keras.models.load_model("saved_model/epoch_750")
 
 #load data because we need to connect integer targets to coordinates
 data = pd.read_csv("data/data_processed2")
