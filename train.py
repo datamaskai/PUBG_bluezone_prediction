@@ -88,11 +88,11 @@ for epoch in range(num_epochs):
     model.fit(train_ds, epochs = 1, verbose = 2, callbacks = [lr_scheduler])
 
     if epoch < 10:
-        model.save(f"complete_saved_model_big/epoch_{epoch}")
+        model.save(f"saved_model/epoch_{epoch}")
     if epoch < 100 and epoch % 10 == 0:
-        model.save(f"complete_saved_model_big/epoch_{epoch}")
+        model.save(f"saved_model/epoch_{epoch}")
     elif epoch % 50 == 0:
-        model.save(f"complete_saved_model_big/epoch_{epoch}")
+        model.save(f"saved_model/epoch_{epoch}")
 
 
 
